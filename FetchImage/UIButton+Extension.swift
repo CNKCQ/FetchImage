@@ -1,5 +1,5 @@
 //
-//  UIImageView+Extension.swift
+//  UIButton+Extension.swift
 //  FetchImageDemo
 //
 //  Created by KingCQ on 2017/1/17.
@@ -8,14 +8,13 @@
 
 import UIKit
 
-extension UIImageView {
+extension UIButton {
     
-    func setWebImage(with url: URL) {
+    func setWebImage(url: URL) {
         FetchImage.default.request(url: url) { data in
             DispatchQueue.main.async {
-                self.image = UIImage(data: data!)
+                self.imageView?.image = UIImage(data: data!)
             }
         }
     }
 }
-

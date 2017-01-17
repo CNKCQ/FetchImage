@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C34F7271E2E220D0074A3AD /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C34F7261E2E220D0074A3AD /* UIButton+Extension.swift */; };
+		3C34F7281E2E220D0074A3AD /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C34F7261E2E220D0074A3AD /* UIButton+Extension.swift */; };
 		3CE34E991E2E107900733A01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE34E981E2E107900733A01 /* AppDelegate.swift */; };
 		3CE34E9B1E2E107900733A01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CE34E9A1E2E107900733A01 /* ViewController.swift */; };
 		3CE34E9E1E2E107900733A01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3CE34E9C1E2E107900733A01 /* Main.storyboard */; };
@@ -46,6 +48,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3C34F7261E2E220D0074A3AD /* UIButton+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		3CE34E951E2E107900733A01 /* FetchImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FetchImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CE34E981E2E107900733A01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3CE34E9A1E2E107900733A01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +128,7 @@
 			children = (
 				3CE34EC01E2E111900733A01 /* FetchImage.swift */,
 				3CE34EC61E2E119600733A01 /* UIImageView+Extension.swift */,
+				3C34F7261E2E220D0074A3AD /* UIButton+Extension.swift */,
 			);
 			path = FetchImage;
 			sourceTree = "<group>";
@@ -247,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C34F7271E2E220D0074A3AD /* UIButton+Extension.swift in Sources */,
 				3CE34E9B1E2E107900733A01 /* ViewController.swift in Sources */,
 				3CE34E991E2E107900733A01 /* AppDelegate.swift in Sources */,
 				3CE34EC71E2E119600733A01 /* UIImageView+Extension.swift in Sources */,
@@ -259,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CE34EC81E2E119600733A01 /* UIImageView+Extension.swift in Sources */,
+				3C34F7281E2E220D0074A3AD /* UIButton+Extension.swift in Sources */,
 				3CE34EC21E2E111900733A01 /* FetchImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -489,6 +495,7 @@
 				3CE34EB91E2E10CF00733A01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
