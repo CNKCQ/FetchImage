@@ -8,14 +8,13 @@
 
 import UIKit
 
-extension UIImageView {
+extension Fetch where Base: UIImageView {
     
     func setWebImage(with url: URL) {
         FetchImage.default.request(url: url) { data in
             DispatchQueue.main.async {
-                self.image = UIImage(data: data!)
+                self.base.image = UIImage(data: data!)
             }
         }
     }
 }
-

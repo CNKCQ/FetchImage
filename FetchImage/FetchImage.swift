@@ -6,7 +6,7 @@
 //  Copyright © 2017年 KingCQ. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class FetchImage {
     
@@ -20,4 +20,29 @@ class FetchImage {
     }
     
 }
+
+class Fetch<Base> {
+    let base: Base
+    
+    init(_ base: Base) {
+        self.base = base
+    }
+}
+
+protocol FetchCompatible {
+    associatedtype Compatible
+    var fi: Compatible { get }
+}
+
+extension FetchCompatible {
+    var fi: Fetch<Self> {
+        get {
+            return Fetch(self)
+        }
+    }
+}
+
+extension UIImageView: FetchCompatible {}
+extension UIButton: FetchCompatible {}
+
 

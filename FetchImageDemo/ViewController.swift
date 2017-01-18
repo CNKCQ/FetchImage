@@ -20,12 +20,11 @@ class ViewController: UIViewController {
         imageVeiw.backgroundColor = UIColor.lightGray
         imageVeiw.frame = CGRect(origin: CGPoint.zero, size: CGSize(width: width, height: height / 2))
         let url = URL(string: "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png")!
-        
-        imageVeiw.setWebImage(with: url)
+        imageVeiw.fi.setWebImage(with: url)
         view.addSubview(imageVeiw)
         button.frame = CGRect(origin: CGPoint(x: 0,y: height / 2), size: CGSize(width: width, height: height / 2))
         button.backgroundColor = UIColor.green
-        button.setWebImage(url: url)
+        button.fi.setWebImage(url: url)
         view.addSubview(button)
     }
 

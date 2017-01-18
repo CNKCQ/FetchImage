@@ -8,13 +8,15 @@
 
 import UIKit
 
-extension UIButton {
+extension Fetch where Base: UIButton {
     
     func setWebImage(url: URL) {
         FetchImage.default.request(url: url) { data in
             DispatchQueue.main.async {
-                self.imageView?.image = UIImage(data: data!)
+                let image = UIImage(data: data!)
+                self.base.setImage(image, for: .normal)
             }
         }
     }
 }
+
